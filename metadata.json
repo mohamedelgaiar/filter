@@ -1,0 +1,8 @@
+{
+  "name": "Remix AquaCare - Water Filter Maintenance \u0026 Accounting",
+  "description": "Professional accounting and maintenance tracking software for water filter service companies. Track stages, scheduled cartridge replacements, customer ledger, overdue alerts, and export reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

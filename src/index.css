@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide standard web UI headers, navigation, buttons, and footers */
+  header,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Reset document for clean printing */
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    height: auto !important;
+    overflow: visible !important;
+    font-size: 11pt !important;
+  }
+
+  /* Remove dark modal overlay when printing */
+  .fixed.inset-0 {
+    position: static !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .relative.max-w-4xl,
+  .relative.max-w-2xl {
+    max-width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+  }
+
+  #printable-run-sheet,
+  #printable-invoice {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    width: 100% !important;
+    display: block !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* CRITICAL: Force all phone numbers to strictly render LTR on print */
+  [dir="ltr"],
+  .phone-number,
+  .phone-container,
+  .dir-ltr {
+    direction: ltr !important;
+    unicode-bidi: isolate !important;
+    text-align: left !important;
+    display: inline-block !important;
+  }
+
+  /* Table styling for crisp print */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    page-break-inside: auto !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  th, td {
+    border-color: #64748b !important;
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "/",
+  "name": "FilterMaintenance - Water Filter Management",
+  "short_name": "FilterMaint",
+  "description": "Professional water filter maintenance tracking and financial accounting app for water filter companies.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#0284c7",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Maintenance Schedule",
+      "short_name": "Maintenance",
+      "description": "View due filter cartridge changes",
+      "url": "/?tab=maintenance",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Customer Records",
+      "short_name": "Customers",
+      "description": "Customer list and filter cards",
+      "url": "/?tab=customers",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Invoices & Ledger",
+      "short_name": "Accounting",
+      "description": "Invoices, dues, and revenue reports",
+      "url": "/?tab=accounting",
+      "icons": [
+        {
+          "src": "/pwa-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
